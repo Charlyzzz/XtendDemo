@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Erwin</groupId>
+	<artifactId>XtendDemo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<!-- Para evitar el molesto mensaje que el proyecto está seteado para un 
+		entorno de Java 1.5, especificamos acá abajo que queremos compilar el proyecto 
+		con el plugin de Maven, seteandolo el entorno en 1.8 -->
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<!-- A continuación viene la lista de componentes externos que necesitamos 
+		En este caso, solamente tres: El plugin que compila el proyecto, JUnit y 
+		Xtend -->
+
+	<dependencies>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.xtend</groupId>
+			<artifactId>org.eclipse.xtend.lib</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.5.1</version>
+		</dependency>
+
+	</dependencies>
+
+</project>
