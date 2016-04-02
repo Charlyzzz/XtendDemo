@@ -1,0 +1,6 @@
+target
+.classpath
+.project
+.settings
+src/test/xtend-gen
+src/main/xtend-gen
